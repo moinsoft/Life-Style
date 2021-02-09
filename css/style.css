@@ -74,7 +74,7 @@ Header Section
 }
 
 .search-area input::placeholder {
-  color: #ffffff;
+  color: #e6e6e6;
 }
 
 .search-area form button {
@@ -90,10 +90,11 @@ Header Section
 
 .search-area form button i {
   color: #666666;
+  transition: all 0.5s;
 }
 
 .search-area form button:hover i {
-  color: #ffffff;
+  color: #e6e6e6;
 }
 
 .menu {
@@ -111,14 +112,46 @@ Header Section
   text-transform: uppercase;
   padding: 10px 7px;
   outline: none;
+  position: relative;
+  transition: all 0.5s;
 }
 
 .menu > ul > li > a:hover {
   color: #666666;
 }
 
+.menu > ul > li > a::before {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  width: 0;
+  height: 2px;
+  bottom: -32px;
+  left: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.menu > ul > li > a::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  width: 0;
+  height: 2px;
+  bottom: -32px;
+  right: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+}
+
+.menu > ul > li > a:hover:before,
+.menu > ul > li > a:hover::after {
+  width: 50%;
+  visibility: visible;
+}
+
 /*=========================
-Header Section
+Banner Section
 ===========================*/
 
 .contact-area {
@@ -146,4 +179,9 @@ Header Section
   text-align: center;
   border-radius: 15px;
   flex-basis: 32%;
+  transition: all 0.5s;
+}
+
+.contact-area a:hover {
+  color: #666666;
 }
