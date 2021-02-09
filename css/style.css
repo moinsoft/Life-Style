@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
+
+/*=========================
+ Common CSS 
+===========================*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "JetBrains Mono", monospace;
+  color: #666666;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*=========================
+Header Section
+===========================*/
+
+.header-area {
+  background-color: #27292f;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.logo {
+  width: 30%;
+}
+
+.header-right-area {
+  width: 70%;
+  text-align: right;
+}
+
+.search-area {
+  width: 100%;
+  max-width: 210px;
+  display: inline-block;
+}
+
+.search-area form {
+  background-color: #666666;
+  border-radius: 25px;
+  padding: 1%;
+}
+
+.search-area input {
+  width: 82%;
+  height: 24px;
+  padding: 1%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.search-area input::placeholder {
+  color: #ffffff;
+}
+
+.search-area form button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: #000000;
+  padding: 1%;
+  cursor: pointer;
+}
+
+.search-area form button i {
+  color: #666666;
+}
+
+.search-area form button:hover i {
+  color: #ffffff;
+}
+
+.menu {
+  margin-top: 5px;
+}
+
+.menu > ul {
+}
+
+.menu > ul > li {
+  display: inline-block;
+}
+
+.menu > ul > li > a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 7px;
+  outline: none;
+}
+
+.menu > ul > li > a:hover {
+  color: #666666;
+}
