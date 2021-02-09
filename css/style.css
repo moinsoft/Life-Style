@@ -20,6 +20,7 @@ body {
 img {
   max-width: 100%;
   height: auto;
+  vertical-align: bottom;
 }
 
 .container {
@@ -32,13 +33,11 @@ Header Section
 ===========================*/
 
 .header-area {
-  background-color: #27292f;
-}
-
-.header-inner {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem;
+  background-color: #27292f;
 }
 
 .logo {
@@ -101,9 +100,6 @@ Header Section
   margin-top: 5px;
 }
 
-.menu > ul {
-}
-
 .menu > ul > li {
   display: inline-block;
 }
@@ -119,4 +115,35 @@ Header Section
 
 .menu > ul > li > a:hover {
   color: #666666;
+}
+
+/*=========================
+Header Section
+===========================*/
+
+.contact-area {
+  background: #e7e7e7;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.contact-area h2 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 36px;
+  flex-basis: 68%;
+}
+
+.contact-area a {
+  text-decoration: none;
+  background: #1f232c;
+  color: #e6e6e6;
+  font-size: 26px;
+  padding: 20px 20px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 15px;
+  flex-basis: 32%;
 }
