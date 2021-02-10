@@ -397,3 +397,28 @@ Widget Section
 .subscribe-form button:hover {
   color: #e6e6e6;
 }
+
+/*=========================
+Footer Section
+===========================*/
+
+.footer-area {
+  background: #1f232c;
+  padding: 40px 20px;
+  color: #737373;
+  font-size: 15px;
+  overflow: hidden;
+}
+
+.footer-area a {
+  color: #666;
+  font-weight: bold;
+  outline: none;
+}
+
+.footer-area p span:nth-child(1) {
+  float: left;
+}
+.footer-area p span:nth-child(2) {
+  float: right;
+}
