@@ -305,3 +305,95 @@ Facilis Section
   font-size: 13px;
   margin-top: 8px;
 }
+
+/*=========================
+Widget Section
+===========================*/
+
+.widget-area {
+  background: #eeeeee;
+  margin-top: 50px;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.widget-single h3 {
+  color: #2c2c2c;
+  font-size: 17px;
+  margin-bottom: 20px;
+}
+
+.widget-single p {
+  color: #7c7c7c;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.widget-single > ul > li {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.widget-single > ul > li > a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 2;
+  color: #666666;
+}
+
+.widget-single h4 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.widget-single h5 {
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+
+.read-more-link {
+  font-size: 14px;
+  color: #1f232c;
+  text-decoration: none;
+  outline: none;
+  text-align: right;
+  display: inherit;
+}
+
+.subscribe-form input[type="text"],
+.subscribe-form input[type="email"] {
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.subscribe-form input::placeholder {
+  color: #e6e6e6;
+}
+
+.subscribe-form button {
+  background: #1f232c;
+  color: #666666;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.subscribe-form button:hover {
+  color: #e6e6e6;
+}
